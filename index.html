@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="나의 경험과 역량을 소개하는 개인 이력서 웹사이트입니다." />
+  <title>김재환 | 개인 이력서</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="주요 메뉴">
+      <a class="brand" href="#home" aria-label="처음으로">JH<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">소개</a>
+        <a href="#skills">역량</a>
+        <a href="#experience">경험</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#education">학력</a>
+        <a class="nav-contact" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+
+          <h1>배우고 도전하며<br /><span>성장하는 사람,</span><br />김재환입니다.</h1>
+          <p class="hero-description">
+            새로운 것을 배우는 데 즐거움을 느끼고, 꾸준한 실행으로 작은 성과를 만들어갑니다.
+            이곳에서 저의 경험과 관심 분야를 소개합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">경험 살펴보기 <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>01</strong><span>꾸준한 성장</span></div>
+            <div><strong>02</strong><span>책임감 있는 실행</span></div>
+            <div><strong>03</strong><span>열린 소통</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="프로필 소개 카드">
+          <div class="visual-glow"></div>
+          <div class="profile-card">
+            <div class="card-topline"><span>CURRICULUM VITAE</span><span class="card-dots">● ● ●</span></div>
+            <div class="avatar" aria-hidden="true">JH</div>
+            <p class="profile-kicker">YOUR NEXT TEAMMATE</p>
+            <h2>김재환</h2>
+            <p class="profile-role">성장과 배움을 추구하는 인재</p>
+            <div class="profile-divider"></div>
+            <div class="profile-info"><span>관심 분야</span><strong>배움 · 협업 · 도전</strong></div>
+            <div class="profile-info"><span>활동 지역</span><strong>대한민국</strong></div>
+            <div class="card-stamp">OPEN<br />TO<br />OPPORTUNITIES</div>
+          </div>
+          <div class="floating-note note-one"><span class="note-icon">✳</span><span>Curious<br /><b>호기심</b></span></div>
+          <div class="floating-note note-two"><span class="note-icon">↗</span><span>Keep moving<br /><b>꾸준한 실행</b></span></div>
+          <span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section section-light" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>저는 이런<br /><span>사람입니다.</span></h2>
+        </div>
+        <div class="about-content reveal">
+          <p class="lead">좋은 결과는 호기심에서 시작해, 꾸준한 노력과 협업을 통해 완성된다고 믿습니다.</p>
+          <p>아직 채워 나갈 부분이 많지만, 모르는 것을 배우고 배운 것을 실제로 적용하는 과정을 중요하게 생각합니다. 맡은 일은 책임감 있게 마무리하고, 다양한 관점을 존중하며 함께 성장하고 싶습니다.</p>
+          <p class="edit-hint">※ 위 문구는 예시입니다. 본인의 성격과 목표에 맞게 자유롭게 수정하세요.</p>
+          <div class="fact-grid">
+            <div class="fact"><span class="fact-number">01</span><strong>배움</strong><p>새로운 지식과 기술을 꾸준히 익힙니다.</p></div>
+            <div class="fact"><span class="fact-number">02</span><strong>책임감</strong><p>작은 약속도 소중히 여기고 끝까지 해냅니다.</p></div>
+            <div class="fact"><span class="fact-number">03</span><strong>협업</strong><p>의견을 나누고 함께 더 나은 방법을 찾습니다.</p></div>
+            <div class="fact"><span class="fact-number">04</span><strong>도전</strong><p>실패를 배움의 기회로 삼고 다시 시도합니다.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-heading section-heading-wide reveal">
+          <div><p class="eyebrow">02 / MY TOOLKIT</p><h2>현재의 역량과<br /><span>앞으로 키워갈 기술.</span></h2></div>
+          <p class="section-intro">아래 항목은 시작을 위한 예시입니다. 실제로 사용할 수 있는 기술과 숙련도에 맞춰 수정해 주세요.</p>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-panel reveal">
+            <div class="panel-label">CORE SKILLS <span>01—04</span></div>
+            <div class="skill-item"><div class="skill-label"><strong>HTML</strong><span>기초 / 학습 중</span></div><div class="skill-track"><span style="--level: 55%"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><strong>CSS</strong><span>기초 / 학습 중</span></div><div class="skill-track"><span style="--level: 45%"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><strong>JavaScript</strong><span>기초 / 학습 중</span></div><div class="skill-track"><span style="--level: 30%"></span></div></div>
+            <div class="skill-item"><div class="skill-label"><strong>문서 작성 및 정리</strong><span>역량 입력</span></div><div class="skill-track"><span style="--level: 65%"></span></div></div>
+          </div>
+          <div class="skill-tags-panel reveal">
+            <div class="panel-label">STRENGTHS <span>05—08</span></div>
+            <p class="tags-description">기술 외에도 제가 중요하게 생각하는 업무 태도입니다.</p>
+            <div class="skill-tags"><span>빠른 학습</span><span>문제 해결</span><span>의사소통</span><span>시간 관리</span><span>협업</span><span>꼼꼼함</span></div>
+            <div class="quote-card"><span class="quote-mark">“</span><p>완벽한 시작보다<br />꾸준한 개선을 선택합니다.</p><span class="quote-caption">MY WORKING PRINCIPLE</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="experience">
+      <div class="container">
+        <div class="section-heading section-heading-wide reveal">
+          <div><p class="eyebrow">03 / EXPERIENCE</p><h2>경험으로 쌓아 온<br /><span>나만의 이야기.</span></h2></div>
+          <p class="section-intro">아르바이트, 동아리, 봉사활동, 인턴십, 직장 경력 등 의미 있는 경험을 시간순으로 적어 보세요.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 현재</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 01</p><h3>경험 또는 활동 이름</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>어떤 역할을 맡았는지, 무엇을 배우거나 개선했는지 2~3문장으로 작성하세요. 가능하다면 결과를 숫자나 구체적인 사례로 설명하면 좋습니다.</p><div class="inline-tags"><span>책임감</span><span>협업</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 20XX.XX</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 02</p><h3>두 번째 경험 또는 활동</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>활동 중 맡은 업무와 해결했던 문제, 그 경험을 통해 얻은 배움을 정리해 주세요.</p><div class="inline-tags"><span>문제 해결</span><span>성장</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 20XX.XX</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 03</p><h3>세 번째 경험 또는 활동</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>작은 경험이라도 본인의 역할과 배운 점이 드러나도록 작성해 보세요.</p><div class="inline-tags"><span>도전</span><span>소통</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading section-heading-wide reveal">
+          <div><p class="eyebrow">04 / SELECTED PROJECTS</p><h2>직접 해 보고<br /><span>만들어 낸 것들.</span></h2></div>
+          <p class="section-intro">개인 작업, 학교 과제, 팀 프로젝트, 포트폴리오 등 결과물을 소개하는 영역입니다.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal"><div class="project-art art-one"><span class="art-label">PROJECT / 01</span><div class="art-browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-content"><span class="browser-line long"></span><span class="browser-line short"></span><div class="browser-blocks"><b></b><b></b><b></b></div></div></div><span class="art-number">01</span></div><div class="project-info"><div><p class="project-category">WEB / PERSONAL</p><h3>나만의 첫 번째 웹사이트</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>프로젝트의 목표와 직접 담당한 부분, 사용한 도구, 완성 후 배운 점을 소개하세요.</p><div class="inline-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+          <article class="project-card reveal"><div class="project-art art-two"><span class="art-label">PROJECT / 02</span><div class="circle-chart"><span>IDEA<br />→<br />RESULT</span></div><span class="art-number">02</span></div><div class="project-info"><div><p class="project-category">TEAM / COLLABORATION</p><h3>팀 활동 또는 과제</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>협업 과정에서 맡은 역할과 프로젝트 결과를 적어 주세요.</p><div class="inline-tags"><span>기획</span><span>협업</span></div></div></article>
+          <article class="project-card reveal"><div class="project-art art-three"><span class="art-label">PROJECT / 03</span><div class="stacked-squares"><b></b><b></b><b></b></div><span class="art-number">03</span></div><div class="project-info"><div><p class="project-category">LEARNING / PRACTICE</p><h3>학습 및 자기계발 기록</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>강의 수료, 자격증 준비, 개인 학습 등 성장을 위해 실천한 내용을 담아 보세요.</p><div class="inline-tags"><span>학습</span><span>성장</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="education">
+      <div class="container two-column education-columns">
+        <div class="section-heading reveal"><p class="eyebrow">05 / EDUCATION</p><h2>배움의<br /><span>기록.</span></h2><p class="section-subcopy">학력, 교육 과정, 자격증과 수료 이력을 정리합니다.</p></div>
+        <div class="education-list reveal">
+          <article class="education-item"><div class="education-icon">EDU</div><div><p class="education-date">20XX.03 — 20XX.02</p><h3>학교명 또는 교육기관</h3><p>전공 · 학과 · 과정명</p><span class="education-note">학력 및 교육 정보 입력</span></div></article>
+          <article class="education-item"><div class="education-icon">CERT</div><div><p class="education-date">20XX.XX 취득</p><h3>자격증 또는 수료 과정</h3><p>발급 기관 · 취득 내용</p><span class="education-note">자격증이 없다면 이 항목을 삭제해도 됩니다.</span></div></article>
+          <article class="education-item"><div class="education-icon">ETC</div><div><p class="education-date">20XX.XX</p><h3>교육 · 수상 · 기타 이력</h3><p>관련 기관 또는 주최자</p><span class="education-note">보여 주고 싶은 이력이 있다면 추가하세요.</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">06 / GET IN TOUCH</p>
+        <h2>함께 성장할<br /><span>기회를 기다립니다.</span></h2>
+        <p>궁금한 점이나 나누고 싶은 이야기가 있다면 편하게 연락해 주세요.</p>
+        <div class="contact-actions"><a class="button button-light" href="mailto:your.email@example.com" id="emailLink">이메일 보내기 <span aria-hidden="true">↗</span></a><button class="button button-outline-light" id="copyEmail" type="button">이메일 주소 복사</button></div>
+        <p class="contact-email" id="emailText">your.email@example.com</p>
+      </div>
+      <div class="contact-decoration decoration-a"></div><div class="contact-decoration decoration-b"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#home">JH<span>.</span></a><p>나의 가능성을 기록하고 성장시키는 공간.</p><p class="copyright">© <span id="currentYear"></span> 김재환. Made with care.</p></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">이메일 주소를 복사했습니다.</div>
+</body>
+</html>
