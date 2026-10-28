@@ -3,9 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="나의 경험과 역량을 소개하는 개인 이력서 웹사이트입니다." />
-  <title>김재환 | 개인 이력서</title>
+  <meta name="description" content="현장부터 본사 영업기획까지, 18년차 AX 패키지 세일즈 다채널 전문가 김재환의 포트폴리오입니다." />
+  <title>김재환 포트폴리오 | AX 패키지 세일즈 다채널 전문가</title>
   <link rel="stylesheet" href="style.css" />
+  <style id="portfolio-reference-styles">
+    .portfolio-hero .container,.portfolio-about .container{width:min(1440px,calc(100% - 64px))}
+    .portfolio-hero{min-height:calc(100vh - 78px);display:flex;align-items:center;padding:90px 0}
+    .portfolio-hero .hero-grid{grid-template-columns:1.3fr 1fr;gap:65px}
+    .portfolio-hero h1{font-size:clamp(36px,3.35vw,64px);letter-spacing:-2.8px;line-height:1.32;word-break:keep-all}
+    .portfolio-hero .hero-actions{margin-top:44px}
+    .portfolio-hero .hero-visual{height:500px}
+    .portfolio-hero .visual-glow{width:440px;height:440px}
+    .portfolio-hero .profile-card{width:440px;max-width:100%;min-height:395px;padding:30px}
+    .profile-summary{display:grid;grid-template-columns:180px minmax(0,1fr);align-items:center;gap:18px;margin:35px 0 18px}
+    .portfolio-hero .avatar{width:180px;height:180px;margin:0;background:#34464e;color:#f1f4e7;border:5px solid #eef3df;font-size:48px;letter-spacing:-3px}
+    .profile-strengths{display:grid;gap:10px}
+    .profile-strength{display:flex;align-items:center;gap:8px;background:#fff;padding:8px;box-shadow:0 8px 25px rgba(20,40,27,.05);font-size:9px;line-height:1.4;color:#7b857e}
+    .profile-strength .note-icon{width:25px;height:25px;flex-shrink:0}
+    .profile-strength strong{display:block;font-size:12px;color:var(--ink);white-space:nowrap}
+    .portfolio-hero .profile-kicker{font-size:13px;font-weight:500}
+    .portfolio-hero .profile-card h2{font-size:32px;margin-top:10px}
+    .portfolio-about .two-column{grid-template-columns:.8fr 1.2fr;gap:80px}
+    .portfolio-about .section-heading h2{font-size:clamp(36px,3.6vw,66px);line-height:1.35;word-break:keep-all}
+    .competency-list{border-top:1px solid var(--line);min-width:0}
+    .competency-item{display:grid;grid-template-columns:38px 1fr;gap:22px;padding:28px 0;border-bottom:1px solid var(--line)}
+    .competency-number{font:italic 12px var(--mono);color:#879b54;padding-top:3px}
+    .competency-label{font:10px var(--mono);letter-spacing:1.2px;color:#879b54;margin:0 0 6px}
+    .competency-item h3{font-size:19px;line-height:1.6;letter-spacing:-.6px;margin:0 0 13px;word-break:keep-all}
+    .competency-item div>p:last-child{font-size:14px;line-height:2.15;color:var(--muted);margin:0;word-break:keep-all}
+    .competency-item strong{color:var(--ink);font-weight:700}
+    .footer-brand{font-size:18px;letter-spacing:-1px}
+    @media(max-width:1100px){.portfolio-hero .hero-grid{gap:20px;grid-template-columns:1.2fr 1fr}.portfolio-hero .hero-visual{transform:scale(.85)}.portfolio-about .two-column{gap:40px}.portfolio-about .section-heading h2{font-size:42px}}
+    @media(max-width:700px){.portfolio-hero .container,.portfolio-about .container{width:calc(100% - 36px)}.portfolio-hero{min-height:auto;padding:60px 0 45px}.portfolio-hero .hero-grid,.portfolio-about .two-column{grid-template-columns:1fr;gap:32px}.portfolio-hero h1{font-size:clamp(30px,7.3vw,48px);letter-spacing:-1.8px}.portfolio-hero .hero-actions{margin-top:28px}.portfolio-hero .hero-visual{height:390px;transform:none}.portfolio-hero .profile-card{width:min(335px,100%);min-height:350px;padding:24px}.portfolio-hero .avatar{width:160px;height:160px}.portfolio-hero .visual-glow{width:300px;height:300px}.profile-summary{grid-template-columns:1fr;justify-items:center;gap:18px;margin-top:27px}.profile-strengths{width:100%}.profile-strength{padding:8px 12px}.portfolio-about .section-heading h2{font-size:40px}.competency-item{grid-template-columns:25px 1fr;gap:12px;padding:25px 0}.competency-item h3{font-size:18px}.competency-item div>p:last-child{font-size:13px}.brand{font-size:21px;letter-spacing:-1px}}
+    .portfolio-hero .avatar{overflow:hidden}
+    .portfolio-hero .avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+    .introduction-section{border-top:1px solid var(--line);background:var(--white)}
+    .introduction-section .container{width:min(1440px,calc(100% - 64px))}
+    .introduction-section .introduction-layout{grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+    .introduction-section .section-heading{position:sticky;top:120px}
+    .introduction-section .section-heading h2{font-size:clamp(36px,3.6vw,66px);line-height:1.35;letter-spacing:-2.5px}
+    .introduction-copy{min-width:0;border-top:1px solid var(--line)}
+    .introduction-story{display:grid;grid-template-columns:48px minmax(0,1fr);gap:22px;padding:32px 0;border-top:1px solid var(--line)}
+    .introduction-story:first-child{border-top:0}
+    .introduction-symbol{width:46px;height:46px;display:grid;place-items:center;background:#eff4e4;border:1px solid #e2e9d5;border-radius:10px;color:#73932e}
+    .introduction-symbol svg{width:26px;height:26px}
+    .introduction-story .introduction-keywords{font-size:11px;line-height:1.5;font-weight:600;letter-spacing:.6px;color:#73932e;margin:0 0 8px}
+    .introduction-story strong{color:var(--ink);font-weight:700}
+    .introduction-story:last-child{border-bottom:1px solid var(--line)}
+    .introduction-story h3{font-size:19px;line-height:1.7;letter-spacing:-.6px;margin:0 0 16px;color:var(--ink);word-break:keep-all}
+    .introduction-story p{white-space:pre-line;font-size:14px;line-height:2.15;color:var(--muted);margin:0;word-break:keep-all;overflow-wrap:anywhere}
+    @media(max-width:1100px){.introduction-section .introduction-layout{gap:40px}.introduction-section .section-heading h2{font-size:42px}}
+    @media(max-width:700px){.introduction-section .container{width:calc(100% - 36px)}.introduction-section .introduction-layout{grid-template-columns:1fr;gap:30px}.introduction-section .section-heading{position:static}.introduction-section .section-heading h2{font-size:40px}.introduction-story{grid-template-columns:36px minmax(0,1fr);gap:14px;padding:26px 0}.introduction-symbol{width:36px;height:36px;border-radius:8px}.introduction-symbol svg{width:22px;height:22px}.introduction-story h3{font-size:17px}.introduction-story p{font-size:13px;line-height:2}}
+    .experience-detail .timeline{max-width:none;margin-left:0}
+    .experience-detail .timeline-date{font-size:12px;line-height:1.8}
+    .experience-detail .timeline-item{padding-bottom:48px}
+    .experience-detail .timeline-content{min-width:0;padding-bottom:36px}
+    .experience-detail .timeline-content h3{font-size:23px;line-height:1.6;word-break:keep-all}
+    .experience-detail .timeline-org{font-size:14px;color:#73932e;margin:6px 0 26px}
+    .experience-detail .timeline-content h4{font-size:13px;font-weight:700;color:#73932e;margin:24px 0 10px;letter-spacing:.3px}
+    .experience-detail .timeline-content>p:not(.timeline-type):not(.timeline-org){font-size:14px;line-height:2;max-width:none;margin:0}
+    .career-results{list-style:none;padding:0;margin:0}
+    .career-results li{position:relative;padding:16px 0 16px 18px;border-top:1px solid #edf0e8}
+    .career-results li::before{content:'';position:absolute;left:0;top:26px;width:5px;height:5px;background:#8a9c58;border-radius:50%}
+    .career-results .result-title{display:block;font-size:15px;line-height:1.8;margin-bottom:5px;color:var(--ink)}
+    .career-results p{font-size:14px;line-height:2;color:var(--muted);margin:0;word-break:keep-all;overflow-wrap:anywhere}
+    .experience-detail strong{color:var(--ink);font-weight:700}
+    .career-results .career-recognition{font-size:12px;margin-top:8px;padding:8px 12px;background:#f4f7ed;border-left:2px solid #9eb56e}
+    @media(max-width:700px){.experience-detail .timeline-date{font-size:11px}.experience-detail .timeline-content h3{font-size:20px}.experience-detail .timeline-org{font-size:12px;margin-bottom:20px}.experience-detail .timeline-content>p:not(.timeline-type):not(.timeline-org),.career-results p{font-size:13px}.career-results .result-title{font-size:14px}.experience-detail .timeline-item{padding-bottom:30px}.experience-detail .timeline-content{padding-bottom:24px}}
+    .education-awards .section-heading{position:sticky;top:120px}
+    .credentials-content{min-width:0}
+    .credentials-group+.credentials-group{margin-top:52px}
+    .credentials-heading{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+    .credential-symbol{width:44px;height:44px;display:grid;place-items:center;background:#eff4e4;border:1px solid #e2e9d5;border-radius:10px;color:#73932e;flex-shrink:0}
+    .credential-symbol svg{width:26px;height:26px}
+    .credentials-heading h3{font-size:22px;letter-spacing:-.7px;margin:0}
+    .academic-list,.awards-list{border-top:1px solid var(--line)}
+    .academic-item,.award-item{padding:24px 0;border-bottom:1px solid var(--line)}
+    .credential-date{font-family:var(--mono);font-size:11px;color:#819078;margin:0 0 8px}
+    .academic-item h4,.award-item h4{font-size:19px;line-height:1.6;letter-spacing:-.4px;margin:0;color:var(--ink)}
+    .academic-item h4 span{font-size:14px;font-weight:500;color:var(--muted)}
+    .credential-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px}
+    .credential-badge{font-size:10px;padding:3px 9px;background:#eff4e4;border-radius:3px;color:#6f8b35}
+    .credential-meta p{font-size:12px;color:var(--muted);margin:0}
+    .credential-meta strong{color:var(--ink)}
+    .award-department{font-size:12px;color:#819078;margin:7px 0 16px}
+    .award-description{font-size:14px;line-height:2;color:var(--muted);margin:0;word-break:keep-all}
+    .award-description strong,.award-note strong{color:var(--ink);font-weight:700}
+    .award-note{font-size:12px;line-height:1.9;color:var(--muted);margin:14px 0 0;padding:11px 14px;background:#f6f8f1;border-left:2px solid #9eb56e;word-break:keep-all}
+    @media(max-width:700px){.education-awards .section-heading{position:static}.credentials-group+.credentials-group{margin-top:36px}.credentials-heading h3{font-size:20px}.academic-item h4,.award-item h4{font-size:18px}.award-description{font-size:13px}.credential-symbol{width:38px;height:38px}.credential-symbol svg{width:23px;height:23px}}
+  </style>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -13,78 +99,120 @@
 
   <header class="site-header">
     <nav class="navbar container" aria-label="주요 메뉴">
-      <a class="brand" href="#home" aria-label="처음으로">JH<span>.</span></a>
+      <a class="brand" href="#home" aria-label="처음으로">김재환 포트폴리오</a>
       <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="navLinks">
-        <a href="#about">소개</a>
-        <a href="#skills">역량</a>
+        <a href="#introduction">자기소개</a>
+        <a href="#about">핵심역량</a>
         <a href="#experience">경험</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#education">경력·학력</a>
+        <a href="#education">학력·수상</a>
         <a class="nav-contact" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero section" id="home">
+    <section class="hero section portfolio-hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-
-          <h1>배우고 도전하며<br /><span>성장하는 사람,</span><br />김재환입니다.</h1>
-          <p class="hero-description">
-            새로운 것을 배우는 데 즐거움을 느끼고, 꾸준한 실행으로 작은 성과를 만들어갑니다.
-            이곳에서 저의 경험과 관심 분야를 소개합니다.
-          </p>
+          <h1>현장부터 본사 영업기획까지,<br /><span>18년차 AX 패키지 세일즈</span><br />다채널 전문가</h1>
           <div class="hero-actions">
             <a class="button button-primary" href="#experience">경험 살펴보기 <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-meta">
-            <div><strong>01</strong><span>꾸준한 성장</span></div>
-            <div><strong>02</strong><span>책임감 있는 실행</span></div>
-            <div><strong>03</strong><span>열린 소통</span></div>
-          </div>
         </div>
-        <div class="hero-visual reveal" aria-label="프로필 소개 카드">
+        <div class="hero-visual reveal" aria-label="김재환 프로필 소개 카드">
           <div class="visual-glow"></div>
           <div class="profile-card">
             <div class="card-topline"><span>CURRICULUM VITAE</span><span class="card-dots">● ● ●</span></div>
-            <div class="avatar" aria-hidden="true">JH</div>
+            <div class="profile-summary">
+              <div class="avatar"><img src="assets/kim-jaehwan-profile.jpg" alt="김재환 프로필 사진" width="180" height="180" fetchpriority="high" /></div>
+              <div class="profile-strengths">
+                <div class="profile-strength"><span class="note-icon" aria-hidden="true">◎</span><span>Analysis<strong>분석력</strong></span></div>
+                <div class="profile-strength"><span class="note-icon" aria-hidden="true">✳</span><span>Planning<strong>기획력</strong></span></div>
+                <div class="profile-strength"><span class="note-icon" aria-hidden="true">↗</span><span>Communication<strong>소통 커뮤니케이터</strong></span></div>
+              </div>
+            </div>
             <p class="profile-kicker">YOUR NEXT TEAMMATE</p>
             <h2>김재환</h2>
-            <p class="profile-role">성장과 배움을 추구하는 인재</p>
-            <div class="profile-divider"></div>
-            <div class="profile-info"><span>관심 분야</span><strong>배움 · 협업 · 도전</strong></div>
-            <div class="profile-info"><span>활동 지역</span><strong>대한민국</strong></div>
-            <div class="card-stamp">OPEN<br />TO<br />OPPORTUNITIES</div>
           </div>
-          <div class="floating-note note-one"><span class="note-icon">✳</span><span>Curious<br /><b>호기심</b></span></div>
-          <div class="floating-note note-two"><span class="note-icon">↗</span><span>Keep moving<br /><b>꾸준한 실행</b></span></div>
           <span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span>
         </div>
       </div>
-      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <section class="section section-light" id="about">
+    <section class="section section-light introduction-section" id="introduction" aria-labelledby="introduction-title">
+      <div class="container two-column introduction-layout">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2 id="introduction-title">자기<span>소개</span></h2>
+        </div>
+        <div class="introduction-copy">
+          <article class="introduction-story">
+            <div class="introduction-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></svg></div>
+            <div class="introduction-story-body">
+              <p class="introduction-keywords">적응력 · 다채널 경험</p>
+              <h3>새로운 현장에서도 수익의 길을 찾습니다</h3>
+              <p>가판 영업에서 시작해 KT M&amp;S 영업공채 1기로 입사한 뒤, 당산·화곡·목동 점장과 지사 채널담당, 대형마트 TF장, 본사 영업기획을 거쳤습니다. 새로운 업무를 맡으면 현장의 흐름과 데이터를 함께 살피며, <strong>흑자 전환과 매출 상승</strong>으로 이어질 방법을 찾아 실행해 왔습니다.</p>
+            </div>
+          </article>
+          <article class="introduction-story">
+            <div class="introduction-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16M8 16v-4m4 4V9m4 7v-5M7 9l5-4 4 2 4-4"/></svg></div>
+            <div class="introduction-story-body">
+              <p class="introduction-keywords">손익 개선 · 5G · DX 세일즈</p>
+              <h3>기획을 현장의 성과로 연결합니다</h3>
+              <p>대형마트 TF장으로 판관비를 분석하고 도급 계약 전환을 이끌어 <strong>적자 채널을 흑자로 전환</strong>했습니다. 본사 소매강화팀에서는 2019년 5G 상용화에 맞춰 세일즈 방향을 정립했고, 강북소매지사 정책선임으로는 <strong>테이블오더·CCTV·서빙 로봇을 결합한 DX 세일즈 모델</strong>을 기획해 현장에 정착시켰습니다.</p>
+            </div>
+          </article>
+          <article class="introduction-story">
+            <div class="introduction-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v2"/></svg></div>
+            <div class="introduction-story-body">
+              <p class="introduction-keywords">데이터 관리 · 신뢰 · 소통</p>
+              <h3>숫자는 꼼꼼하게, 사람은 다정하게 대합니다</h3>
+              <p>점장 시절의 전사 판매경진대회 우승과 전국 138개 마트 점포 운영 및 본사 핵심부서에서의 정책주무의 경험을 통해, 성과의 바탕은 <strong>현장 직원과 스탭의 신뢰</strong>라는 것을 배웠습니다. 수기 취합으로 늦게까지 일하던 직원들을 위해 <strong>전자 판매일보 시스템</strong>을 제안하고 구축한 것도 같은 이유입니다. 정확한 데이터 관리와 현장의 어려움을 듣는 소통으로, 사람과 성과를 함께 남기는 진정한 소통/전략가로 활동 하였습니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light portfolio-about" id="about">
       <div class="container two-column">
         <div class="section-heading reveal">
-          <p class="eyebrow">01 / ABOUT ME</p>
-          <h2>저는 이런<br /><span>사람입니다.</span></h2>
+          <p class="eyebrow">02 / CORE COMPETENCIES</p>
+          <h2>저는 4가지<br /><span>핵심기술을</span><br />보유하고 있습니다.</h2>
         </div>
-        <div class="about-content reveal">
-          <p class="lead">좋은 결과는 호기심에서 시작해, 꾸준한 노력과 협업을 통해 완성된다고 믿습니다.</p>
-          <p>아직 채워 나갈 부분이 많지만, 모르는 것을 배우고 배운 것을 실제로 적용하는 과정을 중요하게 생각합니다. 맡은 일은 책임감 있게 마무리하고, 다양한 관점을 존중하며 함께 성장하고 싶습니다.</p>
-          <p class="edit-hint">※ 위 문구는 예시입니다. 본인의 성격과 목표에 맞게 자유롭게 수정하세요.</p>
-          <div class="fact-grid">
-            <div class="fact"><span class="fact-number">01</span><strong>배움</strong><p>새로운 지식과 기술을 꾸준히 익힙니다.</p></div>
-            <div class="fact"><span class="fact-number">02</span><strong>책임감</strong><p>작은 약속도 소중히 여기고 끝까지 해냅니다.</p></div>
-            <div class="fact"><span class="fact-number">03</span><strong>협업</strong><p>의견을 나누고 함께 더 나은 방법을 찾습니다.</p></div>
-            <div class="fact"><span class="fact-number">04</span><strong>도전</strong><p>실패를 배움의 기회로 삼고 다시 시도합니다.</p></div>
-          </div>
+        <div class="competency-list">
+          <article class="competency-item reveal">
+            <span class="competency-number">01</span>
+            <div><p class="competency-label">ADAPTABILITY &amp; VERSATILITY</p>
+              <h3>빠른 신규 업무 적응력과 다채로운 채널 경험</h3>
+              <p>가판 영업, 직영점장, 지사 채널담당, 대형마트 TF장, 본사 영업기획, 지사 정책선임까지 동기 대비 <strong>독보적으로 다채로운 현장·본사 채널</strong>을 거쳤습니다. 생소한 업무나 조직에 투입되어도 <strong>빠르게 적응</strong>하여 <strong>흑자 및 순익</strong>으로 증명해 온 실전파입니다.</p>
+            </div>
+          </article>
+          <article class="competency-item reveal">
+            <span class="competency-number">02</span>
+            <div><p class="competency-label">DATA-DRIVEN &amp; DETAIL</p>
+              <h3>수치와 데이터로 증명하는 영업기획 및 손익 관리</h3>
+              <p><strong>컴퓨터공학 전공</strong> 기반의 논리적 사고로 <strong>가입자 ARPU, 고마진율, 매장별 고정비 충당률</strong> 등 정량 지표를 정밀 분석합니다. <strong>정산 오차 0%</strong>의 꼼꼼한 수수료 검증과 <strong>전산 관리 시스템(전자 판매일보) 구축</strong>을 주도했습니다.</p>
+            </div>
+          </article>
+          <article class="competency-item reveal">
+            <span class="competency-number">03</span>
+            <div><p class="competency-label">5G LAUNCH &amp; DX PACKAGE</p>
+              <h3>5G 상용화 원년(2019) 본사 핵심부서 주도 및 매장 DX 패키지 기획</h3>
+              <p><strong>대한민국 최초 5G 출시</strong> 시점, 본사 <strong>소매강화팀 핵심 선임</strong>으로서 2배 이상의 몰입과 추진력으로 <strong>시장 주도권을 확보</strong>했습니다. 통신 단품 위주에서 <strong>테이블오더, CCTV, 서빙로봇</strong> 등 <strong>DX 전략상품 결합 세일즈 모델</strong>을 정착시켰습니다.</p>
+            </div>
+          </article>
+          <article class="competency-item reveal">
+            <span class="competency-number">04</span>
+            <div><p class="competency-label">RELATIONSHIP</p>
+              <h3>사람 냄새 나는 신뢰 중심의 리더십</h3>
+              <p>꼼꼼한 숫자 관리 뒤에서 현장 직원, 매장 근무자, 대리점주들의 <strong>애로사항을 헤아리고 돕는</strong> 리더입니다. <strong>사람을 남기는 영업</strong>을 실천하는 <strong>다정한 소통가</strong>입니다.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -92,7 +220,7 @@
     <section class="section section-dark" id="skills">
       <div class="container">
         <div class="section-heading section-heading-wide reveal">
-          <div><p class="eyebrow">02 / MY TOOLKIT</p><h2>현재의 역량과<br /><span>앞으로 키워갈 기술.</span></h2></div>
+          <div><p class="eyebrow">MY TOOLKIT</p><h2>현재의 역량과<br /><span>앞으로 키워갈 기술.</span></h2></div>
           <p class="section-intro">아래 항목은 시작을 위한 예시입니다. 실제로 사용할 수 있는 기술과 숙련도에 맞춰 수정해 주세요.</p>
         </div>
         <div class="skills-layout">
@@ -113,16 +241,85 @@
       </div>
     </section>
 
-    <section class="section section-light" id="experience">
+    <section class="section section-light experience-detail" id="experience">
       <div class="container">
-        <div class="section-heading section-heading-wide reveal">
-          <div><p class="eyebrow">03 / EXPERIENCE</p><h2>경험으로 쌓아 온<br /><span>나만의 이야기.</span></h2></div>
-          <p class="section-intro">아르바이트, 동아리, 봉사활동, 인턴십, 직장 경력 등 의미 있는 경험을 시간순으로 적어 보세요.</p>
+        <div class="section-heading section-heading-wide">
+          <div><p class="eyebrow">03 / EXPERIENCE</p><h2>세부 경력 및<br /><span>실행 성과.</span></h2></div>
         </div>
         <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 현재</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 01</p><h3>경험 또는 활동 이름</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>어떤 역할을 맡았는지, 무엇을 배우거나 개선했는지 2~3문장으로 작성하세요. 가능하다면 결과를 숫자나 구체적인 사례로 설명하면 좋습니다.</p><div class="inline-tags"><span>책임감</span><span>협업</span></div></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 20XX.XX</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 02</p><h3>두 번째 경험 또는 활동</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>활동 중 맡은 업무와 해결했던 문제, 그 경험을 통해 얻은 배움을 정리해 주세요.</p><div class="inline-tags"><span>문제 해결</span><span>성장</span></div></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">20XX.XX — 20XX.XX</div><div class="timeline-marker"></div><div class="timeline-content"><p class="timeline-type">EXPERIENCE 03</p><h3>세 번째 경험 또는 활동</h3><p class="timeline-org">회사명 · 기관명 · 동아리명</p><p>작은 경험이라도 본인의 역할과 배운 점이 드러나도록 작성해 보세요.</p><div class="inline-tags"><span>도전</span><span>소통</span></div></div></article>
+          <article class="timeline-item">
+            <div class="timeline-date">2021.02 ~ 2026.10</div><div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-type">EXPERIENCE 01</p>
+              <h3>강북영업본부 강북소매지사</h3><p class="timeline-org">정책선임</p>
+              <h4>담당 직무</h4>
+              <p>지사 <strong>소매 영업 정책 수립·집행</strong>, 관내 <strong>매장 손익 관리</strong> 및 <strong>DX 전략상품 채널 정착</strong></p>
+              <h4>주요 성과 및 실행 내역</h4>
+              <ul class="career-results">
+                <li><strong class="result-title">매장 DX 전략상품 결합 세일즈 안착</strong><p>통신 단품 영업을 넘어 <strong>테이블오더, CCTV, 서빙로봇</strong> 등 전략상품 패키지 기획 및 현장 정착 주도.</p></li>
+                <li><p>관내 매장별 <strong>매출/손익 지표 정밀 분석</strong>을 통한 <strong>차등 정책 집행</strong>으로 지사 목표 달성 견인.</p></li>
+                <li><p>현장 판매 인력과의 <strong>밀착 소통</strong>으로 불확실한 시장 상황 속에서도 <strong>안정적 가입자 기반 유지</strong>.</p></li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2018.12 ~ 2021.01</div><div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-type">EXPERIENCE 02</p>
+              <h3>본사 영업총괄본부 소매강화팀</h3><p class="timeline-org">총괄선임</p>
+              <h4>담당 직무</h4>
+              <p>전국 <strong>소매 채널 영업정책 수립·집행 총괄</strong>, <strong>5G 상용화 세일즈 기획</strong>, 제조사/유관부서 <strong>정산 및 수수료 검증</strong></p>
+              <h4>주요 성과 및 실행 내역</h4>
+              <ul class="career-results">
+                <li><strong class="result-title">5G 출시 원년(2019년) 회사의 방향성 제고 및 2배의 노력</strong><p>대한민국 세계 최초 5G 상용화 시점, 본사 소매강화 핵심 선임으로서 남들보다 <strong>2배 이상</strong> 뛰며 <strong>전사 5G 활성화 정책 수립</strong>. 고가 요금제(<strong>ARPU 10만원 대</strong>) 및 전략 디바이스 판매를 폭발적으로 끌어올려 회사의 <strong>5G 시장 조기 안착</strong> 견인.</p></li>
+                <li><strong class="result-title">정교한 정산 및 전산 시스템 구축</strong><p>KT 및 제조사(<strong>삼성/애플</strong>) 코웍 수수료를 데이터 기반으로 정밀 검증(<strong>오차 0%</strong>). 수기 취합 업무 축소를 위한 <strong>전자 판매일보 관리 시스템</strong> 제안 및 개발 참여.</p></li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2016.07 ~ 2018.11</div><div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-type">EXPERIENCE 03</p>
+              <h3>본사 영업총괄본부 대형마트 총괄 관리</h3><p class="timeline-org">TF장</p>
+              <h4>담당 직무</h4>
+              <p>전국 <strong>이마트/홈플러스 대형마트 채널 총괄 관리</strong>, <strong>도급 전환 및 대관/임금 협상</strong>, 손익 정밀 정책 집행</p>
+              <h4>주요 성과 및 실행 내역</h4>
+              <ul class="career-results">
+                <li><strong class="result-title">수익성 분석을 통한 흑자 채널 안착</strong><p>전국 <strong>138개 대형마트 점포</strong>의 판관비(입점비, 인건비, 프로모션비) 대비 매출 데이터를 세분화하여 <strong>정밀 정산 분석</strong>.</p></li>
+                <li><strong class="result-title">손익 기반 정밀 정책 집행</strong><p>전국 점포의 <strong>가입자 Quality 데이터(마진율, 유선/카드/2nd 결합률)</strong> 분석을 통해 <strong>매장 고정비 정산</strong>.</p></li>
+                <li><strong class="result-title">대형 채널 손익 구조 완전 개선</strong><p>수치화된 손익 근거를 바탕으로 KT 담당부서와 정교한 <strong>연단위 계약 협상</strong>을 집행, 비용 부담이 크던 대형마트 채널을 회사내 <strong>4대 채널 중 흑자 채널로 전환</strong>시킴.</p></li>
+                <li><strong class="result-title">전국 단위 조직 관리 및 유대감 형성</strong><p>본사 TF장 포함 <strong>6인의 인력</strong>으로 <strong>10개 지역 센터 조직의 영업 피드백 체계 구축</strong> 및 현장 근무자들과의 지속적 소통으로 <strong>영업 몰입도 극대화</strong>.</p></li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2010.03 ~ 2016.06</div><div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-type">EXPERIENCE 04</p>
+              <h3>강남소매지사</h3><p class="timeline-org">정책선임</p>
+              <h4>담당 직무</h4>
+              <p>지사 <strong>유·무선 영업 정책 집행</strong>, <strong>KT 지역 마케팅부 협상</strong>, 매집점 정산 및 영업 관리</p>
+              <h4>주요 성과</h4>
+              <ul class="career-results">
+                <li><p>단품 중심에서 <strong>유·무선결합 판매 체계로 전환</strong>, 지사 <strong>매출 퀀텀 점프</strong> 달성.</p></li>
+                <li><p>관리 매집점주들과의 <strong>끈끈한 관계 형성</strong> 및 모집 대리점 정밀 관리로 전사 최초 <strong>소매지사 유선 월 1,000 가입자 돌파</strong>.</p><p class="career-recognition">성과를 인정받아 <strong>본사 핵심 스텝 발령</strong></p></li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2008.07 ~ 2010.02</div><div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-type">EXPERIENCE 05</p>
+              <h3>kt m&amp;s 영업공채 1기 &amp; 현장 직영점장</h3><p class="timeline-org">영업공채 1기 인턴 · 당산·화곡·목동 직영점장</p>
+              <h4>담당 직무</h4>
+              <p><strong>영업공채 1기 인턴</strong> 및 <strong>당산, 화곡, 목동 직영점장</strong> 근무</p>
+              <h4>주요 성과</h4>
+              <ul class="career-results">
+                <li><strong class="result-title">영업공채 1기 전사 1위 달성</strong><p>입사 인턴 기간 중 진행된 판매 컨테스트에서 <strong>전사 1위</strong>를 달성하며 <strong>최우수 인턴사원 선정</strong>.</p></li>
+                <li><strong class="result-title">현장 세일즈 전문가 입증</strong><p>당산, 화곡, 목동 직영점 점장으로 근무하며 매장 판매 및 관리 역량을 발휘, <strong>전사 점장/영업담당 판매경진대회 토너먼트 최종 우승(09.08.19)</strong>.</p></li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -130,7 +327,7 @@
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-heading section-heading-wide reveal">
-          <div><p class="eyebrow">04 / SELECTED PROJECTS</p><h2>직접 해 보고<br /><span>만들어 낸 것들.</span></h2></div>
+          <div><p class="eyebrow">SELECTED PROJECTS</p><h2>직접 해 보고<br /><span>만들어 낸 것들.</span></h2></div>
           <p class="section-intro">개인 작업, 학교 과제, 팀 프로젝트, 포트폴리오 등 결과물을 소개하는 영역입니다.</p>
         </div>
         <div class="project-grid">
@@ -141,31 +338,77 @@
       </div>
     </section>
 
-    <section class="section section-light" id="education">
+    <section class="section section-light education-awards" id="education" aria-labelledby="education-title">
       <div class="container two-column education-columns">
-        <div class="section-heading reveal"><p class="eyebrow">05 / CAREER &amp; EDUCATION</p><h2>경력과 배움의<br /><span>기록.</span></h2><p class="section-subcopy">근무 경력과 학력, 교육 및 자격 이력을 소개합니다.</p></div>
-        <div class="education-list reveal">
-          <article class="education-item"><div class="education-icon">WORK</div><div><p class="education-date">2020년 — 현재</p><h3>KT M&amp;S</h3><p>2020년부터 KT M&amp;S에서 근무하고 있습니다.</p><span class="education-note">재직 중</span></div></article>
-          <article class="education-item"><div class="education-icon">CERT</div><div><p class="education-date">20XX.XX 취득</p><h3>자격증 또는 수료 과정</h3><p>발급 기관 · 취득 내용</p><span class="education-note">자격증이 없다면 이 항목을 삭제해도 됩니다.</span></div></article>
-          <article class="education-item"><div class="education-icon">ETC</div><div><p class="education-date">20XX.XX</p><h3>교육 · 수상 · 기타 이력</h3><p>관련 기관 또는 주최자</p><span class="education-note">보여 주고 싶은 이력이 있다면 추가하세요.</span></div></article>
+        <div class="section-heading">
+          <p class="eyebrow">04 / EDUCATION &amp; AWARDS</p>
+          <h2 id="education-title">학력과 수상의<br /><span>기록.</span></h2>
+        </div>
+        <div class="credentials-content">
+          <div class="credentials-group" aria-labelledby="academic-title">
+            <div class="credentials-heading">
+              <span class="credential-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c4 3 8 3 12 0v-6m4-2v7"/></svg></span>
+              <h3 id="academic-title">학력</h3>
+            </div>
+            <div class="academic-list">
+              <article class="academic-item">
+                <p class="credential-date">2000.03 ~ 2008.02</p>
+                <h4>단국대학교 <span>(천안)</span></h4>
+                <div class="credential-meta"><span class="credential-badge">졸업</span><p>학점 <strong>3.25 / 4.0</strong></p></div>
+              </article>
+              <article class="academic-item">
+                <p class="credential-date">2000</p>
+                <h4>경성고등학교</h4>
+                <div class="credential-meta"><span class="credential-badge">졸업</span></div>
+              </article>
+              <article class="academic-item">
+                <p class="credential-date">1997</p>
+                <h4>숭문중학교</h4>
+                <div class="credential-meta"><span class="credential-badge">졸업</span></div>
+              </article>
+            </div>
+          </div>
+          <div class="credentials-group" aria-labelledby="awards-title">
+            <div class="credentials-heading">
+              <span class="credential-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v6a5 5 0 0 1-10 0V3Zm0 2H3v3a4 4 0 0 0 4 4m10-7h4v3a4 4 0 0 1-4 4m-5 2v6m-4 1h8"/></svg></span>
+              <h3 id="awards-title">수상</h3>
+            </div>
+            <div class="awards-list">
+              <article class="award-item">
+                <p class="credential-date">2026년 상반기</p>
+                <h4>CEO 표창</h4>
+                <p class="award-department">지급부서 : <strong>사장</strong></p>
+                <p class="award-description">본사 2026년 주요 핵심가치 선정, 상반기 <strong>핵심가치 우수관리자</strong>에게 수상하는 <strong>CEO 표창</strong></p>
+                <p class="award-note">(본사 주요 핵심가치 동기화 지표과제중, <strong>최우수 관리 직원</strong>에게 시상)</p>
+              </article>
+              <article class="award-item">
+                <p class="credential-date">2015 상반기</p>
+                <h4>우수 사원 특별 포상</h4>
+                <p class="award-department">지급부서 : <strong>사장</strong></p>
+                <p class="award-description">상반기 <strong>개인KPI 지표선정</strong>, 개인별 <strong>본사 우수사례 발표선정</strong> 기준 최종 선발자에게 주어지는 포상</p>
+                <p class="award-note">(본사 주요 핵심가치 동기화 지표과제중, <strong>최우수 관리 직원</strong>에게 시상)</p>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="container contact-inner reveal">
-        <p class="eyebrow">06 / GET IN TOUCH</p>
+        <p class="eyebrow">GET IN TOUCH</p>
         <h2>함께 성장할<br /><span>기회를 기다립니다.</span></h2>
         <p>궁금한 점이나 나누고 싶은 이야기가 있다면 편하게 연락해 주세요.</p>
-        <div class="contact-actions"><a class="button button-light" href="mailto:your.email@example.com" id="emailLink">이메일 보내기 <span aria-hidden="true">↗</span></a><button class="button button-outline-light" id="copyEmail" type="button">이메일 주소 복사</button></div>
-        <p class="contact-email" id="emailText">your.email@example.com</p>
+        <p class="contact-phone">연락처 <a href="tel:01077530008">010-7753-0008</a></p>
+        <div class="contact-actions"><a class="button button-light" href="mailto:polo1216@naver.com" id="emailLink">이메일 보내기 <span aria-hidden="true">↗</span></a><button class="button button-outline-light" id="copyEmail" type="button">이메일 주소 복사</button></div>
+        <p class="contact-email" id="emailText">polo1216@naver.com</p>
       </div>
       <div class="contact-decoration decoration-a"></div><div class="contact-decoration decoration-b"></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner"><a class="brand footer-brand" href="#home">JH<span>.</span></a><p>나의 가능성을 기록하고 성장시키는 공간.</p><p class="copyright">© <span id="currentYear"></span> 김재환. Made with care.</p></div>
+    <div class="container footer-inner"><a class="brand footer-brand" href="#home">김재환 포트폴리오</a><p>나의 가능성을 기록하고 성장시키는 공간.</p><p class="copyright">© <span id="currentYear"></span> 김재환. Made with care.</p></div>
   </footer>
   <div class="toast" id="toast" role="status" aria-live="polite">이메일 주소를 복사했습니다.</div>
 </body>
